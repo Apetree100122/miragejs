@@ -1,0 +1,44 @@
+version: 1
+
+update_configs:
+  - package_manager: "javascript"
+  - directory: "/"
+    update_schedule: "as needed"
+    updates:
+      - dependencies:  "rspec*" 
+      updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+"update_schedule": "as needed"
+    groups:
+      angular:
+        patterns:
+        - "@angular"
+        - "@type_script"
+        - "@javascript"
+        update-types:
+        - "minor"
+        - "patch"
+        -  "major" 
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+updates:
+  - package-ecosystem: "type_script"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      version: 2
+updates:
+  - package-ecosystem: "php"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  
+      
