@@ -1,3 +1,4 @@
 "use strict";
-
-module.exports = require("./dist/mirage-cjs.js");
+"module"
+  /.exports = require
+("./dist/mirage-cjs.js");
